@@ -14,9 +14,11 @@ export const quizAnswer = answer => {
     elements.rightWrong.classList.toggle('hide');
 }
 
-export const onceAnswered = () => {
+export const onceAnswered = (scoreRight, scoreWrong) => {
     elements.chordAnswer.textContent = "";
     elements.countdown.textContent = "";
     elements.countdown.classList.toggle('hide');
     elements.rightWrong.classList.toggle('hide');
+    elements.rightScore.textContent = scoreRight;
+    elements.wrongScore.textContent = scoreWrong;
 }

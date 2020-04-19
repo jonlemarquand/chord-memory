@@ -5,5 +5,7 @@ export const elements = {
     waitText: document.querySelector('.waitText'),
     rightWrong: document.querySelector('.rightWrong'),
     right: document.querySelector('.right'),
-    wrong: document.querySelector('.wrong')
+    wrong: document.querySelector('.wrong'),
+    rightScore: document.querySelector('.rightScore'),
+    wrongScore: document.querySelector('.wrongScore')
 }

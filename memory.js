@@ -36,18 +36,20 @@ const questionControl = () => {
 }
 
 elements.right.addEventListener('click', () => {
-    quizView.onceAnswered();
-    quizQuestions.chordNumber();
+    state.scoreRight += 1;
+    quizView.onceAnswered(state.scoreRight, state.scoreWrong);
     questionControl()
 });
 
 elements.wrong.addEventListener('click', () => {
-    quizView.onceAnswered();
-    quizQuestions.chordNumber();
+    state.scoreWrong += 1;
+    quizView.onceAnswered(state.scoreRight, state.scoreWrong);
     questionControl()
 });
 
 
 window.addEventListener('load', () => {
+    state.scoreRight = 0;
+    state.scoreWrong = 0;
     questionControl()
 });
