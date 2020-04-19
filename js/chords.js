@@ -1,4 +1,4 @@
-export const chords = [{
+const chords = [{
         name: "Dm7",
         chord: "D F C"
     },
@@ -179,3 +179,5 @@ export const chords = [{
         chord: "B Eb Bb"
     }
 ]
+
+export default chords;

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+#container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 0;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.answer {
+    &.pre {
+        font-size: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &.post {
+        font-size: 64px;
+    }
+}
+
+.rightWrong {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    .right,
+    .wrong {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .right {
+        background: olivedrab;
+    }
+
+    .wrong {
+        background: darkred;
+    }
+}
+
+
+.bottom {
+    margin-top: auto;
+}
+
+.score {
+    display: flex;
+    width: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+}
