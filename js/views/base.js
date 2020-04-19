@@ -3,5 +3,7 @@ export const elements = {
     chordAnswer: document.querySelector('.post'),
     countdown: document.querySelector('#timer'),
     waitText: document.querySelector('.waitText'),
-    rightWrong: document.querySelector('.rightWrong')
+    rightWrong: document.querySelector('.rightWrong'),
+    right: document.querySelector('.right'),
+    wrong: document.querySelector('.wrong')
 }

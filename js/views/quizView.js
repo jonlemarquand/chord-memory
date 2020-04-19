@@ -13,3 +13,10 @@ export const quizAnswer = answer => {
     elements.countdown.classList.toggle('hide');
     elements.rightWrong.classList.toggle('hide');
 }
+
+export const onceAnswered = () => {
+    elements.chordAnswer.textContent = "";
+    elements.countdown.textContent = "";
+    elements.countdown.classList.toggle('hide');
+    elements.rightWrong.classList.toggle('hide');
+}
