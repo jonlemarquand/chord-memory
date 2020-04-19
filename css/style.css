@@ -75,4 +75,11 @@ h2 {
   display: none;
 }
 
+@media only screen and (max-height: 800px) {
+  #container {
+    height: 90vh;
+    padding: 5vh 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

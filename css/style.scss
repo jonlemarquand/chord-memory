@@ -81,3 +81,10 @@ h2 {
 .hide {
     display: none;
 }
+
+@media only screen and (max-height: 800px) {
+    #container {
+        height: 90vh;
+        padding: 5vh 0;
+    }
+}
