@@ -1,4 +1,4 @@
-let chords = [{
+export const chords = [{
         name: "Dm7",
         chord: "D F C"
     },
@@ -179,5 +179,3 @@ let chords = [{
         chord: "B Eb Bb"
     }
 ]
-
-console.log(chords[26].name);
