@@ -1,10 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  color: #ffffff;
+  background-color: #5b1b9a;
+  font-family: "Lato", sans-serif;
 }
 
 h2 {
+  font-family: "Lato", sans-serif;
   font-size: 64px;
+  font-weight: 900;
 }
 
 #container {
@@ -25,36 +30,47 @@ h2 {
 }
 
 .answer.pre {
-  font-size: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.answer .waitText {
+  font-weight: 400;
+  font-size: 28px;
+}
+.answer #timer {
+  font-weight: 900;
+  font-size: 64px;
+}
 .answer.post {
   font-size: 64px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+
+.fa-check,
+.fa-times {
+  font-size: 48px;
+  color: #f1c622;
 }
 
 .rightWrong {
-  width: 600px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
 }
 .rightWrong .right,
 .rightWrong .wrong {
-  height: 150px;
-  width: 150px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-}
-.rightWrong .right {
-  background: olivedrab;
-}
-.rightWrong .wrong {
-  background: darkred;
+  border: 5px solid #f1c622;
+  cursor: pointer;
 }
 
 .bottom {
@@ -69,16 +85,33 @@ h2 {
   width: 80px;
   align-items: center;
   justify-content: space-between;
+  font-size: 36px;
+  font-weight: 900;
+}
+.score p {
+  margin: 0;
 }
 
 .hide {
   display: none;
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 850px) {
   #container {
     height: 90vh;
     padding: 5vh 0;
+  }
+}
+@media only screen and (max-height: 812px) {
+  #container {
+    height: 94vh;
+    padding: 3vh 0;
+  }
+}
+@media only screen and (max-height: 650px) {
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 }
 
