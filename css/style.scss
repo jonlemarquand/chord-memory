@@ -34,6 +34,12 @@ h2 {
 	align-items: center;
 }
 
+.logo {
+	background: url("../assets/chordtheory.png");
+	width: 605px;
+	height: 200px;
+}
+
 .answer {
 	&.pre {
 		display: flex;
@@ -110,6 +116,11 @@ h2 {
 	#container {
 		height: 90vh;
 		padding: 5vh 0;
+	}
+	.logo {
+		background: url("../assets/chordtheory-small.png");
+		width: 172px;
+		height: 57px;
 	}
 }
 
